@@ -8,3 +8,11 @@ public interface MyMapInterface<KeyType, ValueType> {
     MySet<KeyValue<KeyType, ValueType>> getList();
     MyMapInterface<ValueType, KeyType> invert();
 }
+
+// public class main
+// { public static void Main(String[] args)
+//      int count1 = 200000000
+//      int count2 =
+//      int
+//      Sout ("sum=" + sum }
+
