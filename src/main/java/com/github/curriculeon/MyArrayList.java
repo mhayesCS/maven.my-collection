@@ -53,8 +53,9 @@ public class MyArrayList<SomeType> implements MyCollectionInterface<SomeType> {
 
     @Override
     public void remove(int indexOfObjectToRemove) {
-        return null;
+        remove(get(indexOfObjectToRemove));
     }
+
 
     @Override
     public SomeType get(int indexOfElement) {
@@ -72,12 +73,29 @@ public class MyArrayList<SomeType> implements MyCollectionInterface<SomeType> {
 
     @Override
     public Boolean contains(SomeType objectToCheckFor) {
-        return null;
+        for (int i = 0; i < content.length; i++ ) {
+            SomeType currentElement = content[i];
+            if (objectToCheckFor.equals(currentElement)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
     public Integer size() {
-        return null;
+        return index;
+    }
+    public int indexOf(Object o) {
+        for (int i = 0; i < content.length; i++) {
+            if(content[i] == null) {
+                continue;
+            }
+            if(content[i].equals(o)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override

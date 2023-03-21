@@ -9,10 +9,4 @@ public interface MyMapInterface<KeyType, ValueType> {
     MyMapInterface<ValueType, KeyType> invert();
 }
 
-// public class main
-// { public static void Main(String[] args)
-//      int count1 = 200000000
-//      int count2 =
-//      int
-//      Sout ("sum=" + sum }
 
